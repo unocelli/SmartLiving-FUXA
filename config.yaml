@@ -18,5 +18,12 @@ map:
   - addons:rw
   - config:rw
 startup: services
+volumes:
+  - './appdata:/usr/src/app/FUXA/server/_appdata'
+  - './db:/usr/src/app/FUXA/server/_db'
+  - './logs:/usr/src/app/FUXA/server/_logs'
+  - './images:/usr/src/app/FUXA/server/_images'
 ports:
   1881/tcp: 1881
+
+
