@@ -1,5 +1,6 @@
 # FUXA HomeAssistant Addon by SmartLiving.Rocks
 Add FUXA to your Home Assistant. It is an easy web-based Process Visualization (SCADA/HMI/Dashboard) software
+Test
 
 >This Addon is based on https://github.com/frangoteam/FUXA. All credits go to the team of frangoteam. Thanks for this awsome product. I instantly love it! Cheers
 >Amon
