@@ -1,6 +1,6 @@
 name: "FUXA by Rocks"
 description: "Web-based Process Visualization (SCADA/HMI/Dashboard) software"
-version: "1.0.1"
+version: "1.0.2"
 url: "https://github.com/unocelli/SmartLiving-FUXA"
 slug: "fuxa-slr"
 webui: "http://[HOST]:[PORT:1881]/home"
@@ -14,15 +14,10 @@ arch:
   - armv7
   - i386
 map:
-  - share:rw
+  - share:/usr/src/app/FUXA/server/_appdata:rw
   - addons:rw
-  - config:rw
+  - config:/usr/src/app/FUXA/server/_appdata:rw
 startup: services
-volumes:
-  - './appdata:/usr/src/app/FUXA/server/_appdata'
-  - './db:/usr/src/app/FUXA/server/_db'
-  - './logs:/usr/src/app/FUXA/server/_logs'
-  - './images:/usr/src/app/FUXA/server/_images'
 ports:
   1881/tcp: 1881
 
